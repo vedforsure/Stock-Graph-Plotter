@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stock Data Plotter</title>
+</head>
+<body>
+    <h1>Stock Data Plotter</h1>
+    <form action="/plot" method="post">
+        <label for="index">Choose stock exchange:</label>
+        <select name="index" id="index">
+            <option value="NYSE">USA (NYSE)</option>
+            <option value="NASDAQ">USA (NASDAQ)</option>
+            <option value="NSE">India (NSE)</option>
+            <option value="BSE">India (BSE)</option>
+            <option value="SSE">China (SSE)</option>
+            <option value="NIK">Japan (NIK)</option>
+            <option value="LSE">UK (LSE)</option>
+        </select>
+        <br>
+        <label for="stock1">Enter 1st stock ticker:</label>
+        <input type="text" name="stock1" required>
+        <br>
+        <label for="stock2">Enter 2nd stock ticker:</label>
+        <input type="text" name="stock2" required>
+        <br>
+        <label for="stock3">Enter 3rd stock ticker:</label>
+        <input type="text" name="stock3" required>
+        <br>
+        <label for="datatype">Type of stock data to graph (Open/Close/High/Low/Volume):</label>
+        <input type="text" name="datatype" required>
+        <br>
+        <input type="submit" value="Plot">
+    </form>
+</body>
+</html>
